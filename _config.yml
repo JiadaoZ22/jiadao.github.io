@@ -1,7 +1,7 @@
 # Site settings
 title: Jiadao's Website
 description: My persoanl webpage
-url: " http://jiadaoz22.github.io/jiadao.github.io/"
+url: "http://jiadaoz22.github.io/jiadao.github.io/"
 baseurl: "/"
 
 # Build settings
