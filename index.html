@@ -1,0 +1,723 @@
+---
+layout: none
+title: Home
+---
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jiadao's Site</title>
+  <script src="{{ './assets/js/get_dayDiff.js' | relative_url }}"></script>
+
+
+  <!--
+    - favicon
+  -->
+  <link rel="shortcut icon" href="{{ './assets/images/favicon_love-color.svg' | relative_url }}" type="image/x-icon">
+
+  <!--
+    - custom css link
+  -->
+  <link rel="stylesheet" href="{{ './assets/css/style.css' | relative_url }}">
+
+  <!--
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <!--
+    - #MAIN
+  -->
+
+  <main>
+
+    <!--
+      - #SIDEBAR
+    -->
+
+    <aside class="sidebar" data-sidebar>
+
+      <div class="sidebar-info">
+
+        <figure class="avatar-box">
+          <img src="{{ './assets/images/profile_1.jpg' | relative_url }}" alt="Jiadao Zou" width="80">
+        </figure>
+
+        <div class="info-content">
+          <h1 class="name" title="Jiadao Zou">Jiadao Zou</h1>
+
+          <p class="title">Researcher & Engineer</p>
+        </div>
+
+        <ul class="social-list">
+
+          <li class="social-item">
+            <a href="https://www.linkedin.com/in/jiadao-zou/" class="social-link">
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="https://scholar.google.com/citations?user=ot9c2vMAAAAJ&hl=en" class="social-link">
+              <ion-icon name="school-outline" ></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="https://github.com/JiadaoZ22" class="social-link">
+              <ion-icon name="logo-github"></ion-icon>
+            </a>
+          </li>
+
+        </ul>
+
+        <button class="info_more-btn" data-sidebar-btn>
+          <span>Show Contacts</span>
+
+          <ion-icon name="chevron-down"></ion-icon>
+        </button>
+
+      </div>
+
+      <div class="sidebar-info_more">
+
+        <div class="separator"></div>
+
+        <ul class="contacts-list">
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="mail-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Email (click to view)</p>
+
+              <div class="text-mask" data-unmasked="jiadao.zou@outlook.com" data-masked="Major"></div>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="phone-portrait-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Phone (click to view)</p>
+
+              <!-- vcard-personal-portfolio\assets\js\script.js -->
+              <div class="text-mask" data-unmasked="+1 (682)248-4272" data-masked="USA Number"></div>
+                <div class="text-mask" data-unmasked="+86 177-1530-3930" data-masked="PRC Number"></div>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="calendar-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Since My Graduation</p>
+              <p class="justified" id="dateDifference">
+                <script>
+                    document.write(dateDifferenceMessage);
+                </script>
+              </p>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="location-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Location</p>
+
+              <a href="#page_contact"><address>Albuquerque, New Mexico, USA</address></a>
+            </div>
+
+          </li>
+
+        </ul>
+
+        <div class="separator"></div>
+
+
+      </div>
+
+    </aside>
+
+
+
+
+
+    <!--
+      - #main-content
+    -->
+
+    <div class="main-content">
+
+      <!--
+        - #NAVBAR
+      -->
+
+      <nav class="navbar">
+
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <button class="navbar-link  active" data-nav-link>About</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Resume</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Gallery</button>
+          </li>
+
+          <!-- <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Portfolio</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Blog</button>
+          </li> -->
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Contact</button>
+          </li>
+
+        </ul>
+
+      </nav>
+
+
+
+
+
+      <!--
+        - #ABOUT
+      -->
+
+      <article class="about  active" data-page="about">
+
+        <header>
+          <h2 class="h2 article-title">About me</h2>
+        </header>
+
+        <section class="about-text">
+          <p class="justified">
+            I am currently a Research Fellow at the subdivision of the non-profit organization <a href="https://www.lovelacebiomedical.org/">Lovelace Biomedical Research Institute</a>, with my focus on leveraging deep learning and large models to address challenges in Neuroscience. Before, I finished my Ph.D. in ECE at <a href="https://www.purdue.edu/">Purdue University</a>, under the supervision of <a href="https://ubiei.org/">Prof. Qingxue Zhang</a>. Prior to that, I finished my Computer Science master degree at <a href="https://www.utdallas.edu/">The Unv. of Texas at Dallas</a>. As my first stop in the US, Texas holds a special place in my heart. It is where I took my first fully English-taught course and experienced my first overseas stay beyond just being a tourist. Earlier, I spent 4 fruitful years at China's gorgeous capitial Beijing, and graduated from <a href="https://english.bistu.edu.cn//">BISTU</a> with unforgettable memories. Ahead of all of these stories, I was in Wuxi, a charming and sweet (we put more sugar than anywhere else) city in eastern China.
+          </p>
+
+        </section>
+
+
+        <!--
+          - service
+        -->
+
+        <section class="service">
+
+          <h3 class="h3 service-title">What i'm doing</h3>
+
+          <ul class="service-list">
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="{{ './assets/images/icon_robot.svg' | relative_url }}" alt="AI icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">AI Algorithms</h4>
+
+                <p class="service-item-text">
+                  Transformer Models, Image Generation/Synthesis, Few-shot Learning, Deep/Reinforcement/Graph/Transfer/Machine Learning
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="{{ './assets/images/icon_health.svg' | relative_url }}" alt="Health icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Health</h4>
+
+                <p class="service-item-text">
+                  Medical Images (MRI, CT),
+                  Physio-signal Processing (brain EEG/fNIRS, Eye EOG, Heart ECG, Body Motion EMG)
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="{{ './assets/images/icon_cloud.svg' | relative_url }}" alt="Cloud app icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title"> Computing</h4>
+
+                <p class="service-item-text">
+                  High Performance Computer (Message Passing Interface, Slurm, Slate, Module) <br>
+                  Cloud Computing (AWS, Google Cloud)
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="{{ './assets/images/icon_App.svg' | relative_url }}" alt="App icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">App Development</h4>
+
+                <p class="service-item-text">
+                  Edge Computing Applications <br>
+                  Web & Android Development
+                </p>
+              </div>
+
+            </li>
+
+          </ul>
+
+        </section>
+
+
+        <!--
+          - testimonials
+        -->
+
+        <section class="testimonials">
+
+
+        </section>
+
+
+        <!--
+          - testimonials modal
+        -->
+
+        <div class="modal-container" data-modal-container>
+
+          <div class="overlay" data-overlay></div>
+
+          <section class="testimonials-modal">
+
+            <button class="modal-close-btn" data-modal-close-btn>
+              <ion-icon name="close-outline"></ion-icon>
+            </button>
+
+
+          </section>
+
+        </div>
+
+
+        <!--
+          - clients
+        -->
+
+
+      </article>
+
+
+
+
+      <!--
+        - #RESUME
+      -->
+
+      <article class="resume" data-page="resume">
+
+        <header>
+          <h2 class="h2 article-title">Resume</h2>
+        </header>
+
+        <!-- My Experience -->
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Experience</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Mind Research Network</h4>
+              <span>2023 — Now</span>
+
+              <p class="timeline-text">
+                Research Fellow: Brain Neuro Imaging (Sex, Traumatic Brain Injury,Schizophrenia, Coginition) 
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Purdue University</h4>
+
+              <span>2019 — 2023</span>
+
+              <p class="timeline-text">
+                Doctor of Philosophy, Electrical Computer Engineering <br>
+                Thesis: "Wearable Big Data Harnessing with Deep Learning, Edge Computing and Efficiency Optimization"
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">The University of Texas at Dallas</h4>
+
+              <span>2017 — 2019</span>
+
+              <p class="timeline-text">
+                Master of Science, Computer Science <br>
+                Teaching Assistant, High School Course Mentor 
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Beijing Information Science & Technology University</h4>
+
+              <span>2013 — 2017</span>
+
+              <p class="timeline-text">
+                Bachelor of Engineering, Telecommunication Engineering <br>
+                Undergraduate Research Assistant: Simulation and Analysis of 3D Micro-Electromechanical Systems
+              </p>
+
+            </li>
+
+          </ol>
+
+        </section>
+
+        <!-- Teaching -->
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Teaching</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title"> Graduate Teaching Assistant (Purdue) </h4>
+              <span>2019 — 2023</span>
+
+              <p class="timeline-text">
+                ECE 595 Efficient AI Theories and Designs
+                <p class="justified" style="text-indent:10px;">
+                  Efficient Learning Theories, Patterns in the Data, Critical Pattern 
+                  Learning, Computation Efficiency, Efficient Pattern Abstraction, 
+                  Model Complexity, Efficient Model Execution, Learning 
+                  Optimization, Efficient and Effective Inference, Learning Machine 
+                  Deployment, Real-world System Design, Real-time Inference, etc.</p>
+
+                <p class="timeline-text">
+                    ECE 629 Neural Networks
+                    <p class="justified" style="text-indent:10px;">
+                      Artificial Neural Network, Backpropagation Learning, Optimization 
+                      Problems, Feedforward and Multistage Networks, Recurrent 
+                      Network, Backpropagation Through Time Learning, Convergence 
+                      Analysis, Neural Activation Functions, Learning Theories, Supervised Neural Learning, Unsupervised Neural Learning, etc.</p>
+
+                      <p class="timeline-text">
+                        ECE 662 Pattern Recognition and Decision Making
+                        <p class="justified" style="text-indent:10px;">
+                          Machine Learning Theories, Fundamental Learning Problems and Principles, Mathematical Optimization, Data Analysis, Feature Extraction, Statistical Analysis, Supervised Learning, Unsupervised Learning, Parametric Classifiers, Non-parametric Classifiers, Bayesian Decision Theory, etc.</p>
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title"> Undergraduate Teaching Assistant (UTD) </h4>
+              <span>2018</span>
+
+              <p class="timeline-text">
+                CS 2305 Discrete Mathematics for Computing I
+                <p class="justified" style="text-indent:10px;">
+                  Principles of counting. Boolean operations. Logic and proof methods. Recurrence relations. Sets, relations, functions. Elementary graph theory. Elementary number theory.</p>
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title"> CS Outreach Summer Campus Tutor (UTD) </h4>
+              <span>2018</span>
+
+              <p class="timeline-text">
+                <p class="justified" style="text-indent:10px;">
+                  Instruct and help K-12 and high school students to make their personal software projects. </p>
+            </li>
+          </ol>
+
+        </section>
+
+        
+
+        <!-- <section class="Publications">
+
+          <h3 class="h3 skills-title">My Publications</h3>
+
+          <ul class="skills-list content-card">
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Web design</h5>
+                <data value="80">80%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 80%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Zou, J., Gullapalli A., Harenski K., Stephenson, Maurer M., & Kiehl, K. (2025), Bridging 
+                  Time and Trauma: Convolutional Neural Networks for Automated Chronic-Acute TBI 
+                  Differentiation. (Under Submission)</h5>
+              </div>
+            </li>
+          </ul>
+
+        </section> -->
+
+      </article>
+
+
+
+
+
+      <!--
+        - #PORTFOLIO
+      -->
+
+      <article class="portfolio" data-page="portfolio">
+
+        <header>
+          <h2 class="h2 article-title">Portfolio</h2>
+        </header>
+        <section class="projects">
+
+          <ul class="filter-list">
+
+            <li class="filter-item">
+              <button class="active" data-filter-btn>All</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Web design</button>
+            </li>
+
+          </ul>
+
+          <div class="filter-select-box">
+
+            <button class="filter-select" data-select>
+
+              <div class="select-value" data-selecct-value>Select category</div>
+
+              <div class="select-icon">
+                <ion-icon name="chevron-down"></ion-icon>
+              </div>
+
+            </button>
+
+            <ul class="select-list">
+
+              <li class="select-item">
+                <button data-select-item>All</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Web design</button>
+              </li>
+
+
+            </ul>
+
+          </div>
+
+          <ul class="project-list">
+
+            <li class="project-item  active" data-filter-item data-category="web development">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="{{ './assets/images/project-1.jpg' | relative_url }}" alt="finance" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Finance</h3>
+
+                <p class="project-category">Web development</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="web development">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="{{ './assets/images/project-2.png' | relative_url }}" alt="orizon" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Orizon</h3>
+
+                <p class="project-category">Web development</p>
+
+              </a>
+            </li>
+
+
+          </ul>
+
+        </section>
+
+      </article>
+
+
+
+
+
+      <!--
+        - #Gallery
+      -->
+
+      <article class="gallery" data-page="gallery">
+
+        <header>
+          <h2 class="h2 article-title">Gallery</h2>
+        </header>
+
+        <section class="blog-posts">
+
+          <div id="gallery" class="gallery_container">
+            <!-- Images will be loaded here dynamically -->
+            <div class="loading-indicator">Loading gallery...</div>
+          </div>
+        
+         <!-- Overlay for zoomed images -->
+          <div id="zoom-overlay" class="zoom-overlay">
+            <div class="zoom-container">
+                <img id="zoomed-image" src="" alt="Zoomed image">
+            </div>
+          </div>
+
+        </section>
+
+      </article>
+
+
+
+
+      <!--
+        - #CONTACT
+      -->
+
+      <article id="page_contact" class="contact" data-page="contact">
+
+        <header>
+          <h2 class="h2 article-title">Contact Me</h2>
+        </header>
+
+        <p class="justified">
+          Jiadao Zou, Ph.D. <br>
+          The Mind Research Network <br>
+          1101 Yale Blvd NE <br>
+          Albuquerque, NM 87106-4188 <br>
+        </p>
+
+        <a href="mailto:jzou@mrn.org" class="contact-link">Working Email</a>
+        
+        <br>
+        <br>
+
+        <section class="mapbox" data-mapbox>
+          <figure>
+            <iframe
+              src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8&q=Mind+Research+Network,Albuquerque+New+Mexico&zoom=11"
+              width="400" height="300" loading="lazy"></iframe>
+          </figure>
+        </section>
+
+      </article>
+
+    </div>
+
+  </main>
+
+
+
+
+
+
+  <!--
+    - custom js link
+  -->
+  <script src="{{ './assets/js/script.js' | relative_url }}"></script>
+  <script src="{{ './assets/js/gallery.js' | relative_url }}"></script>
+
+  <!--
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
