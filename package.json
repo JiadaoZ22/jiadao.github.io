@@ -1,0 +1,13 @@
+{
+  "name": "vcard-personal-portfolio",
+  "version": "1.0.0",
+  "description": "",
+  "main": "generate-manifest.js",
+  "scripts": {
+    "build:manifest": "node generate_manifest.js",
+    "start": "npm run build:manifest && http-server"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
